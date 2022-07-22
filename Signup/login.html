@@ -1,0 +1,606 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+      }
+      .nav {
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        padding: 10px;
+        top: 0;
+        position: sticky;
+        background-color: white;
+        z-index: 1;
+      }
+      .main {
+        /* border: 2px solid red; */
+        display: flex;
+        justify-content: space-between;
+        /* height: 50px; */
+        background-color: #fee8e8;
+      }
+      .main > div:nth-child(1) {
+        display: flex;
+        width: 20%;
+        /* border: 2px solid red; */
+        justify-content: space-around;
+        text-align: center;
+        margin-left: 200px;
+      }
+      .main > div:nth-child(1) > img {
+        width: 10%;
+        height: 40px;
+        margin-top: 6px;
+      }
+      .main > div:nth-child(2) {
+        display: flex;
+        width: 20%;
+      }
+      .main > div:nth-child(2) > img {
+        width: 20%;
+        height: 40px;
+        margin-top: 6px;
+      }
+      .pink {
+        color: #ffa497;
+        font-weight: bold;
+      }
+      .main1 {
+        /* border: 2px solid red; */
+        display: flex;
+        justify-content: space-between;
+        height: 50px;
+        margin-top: 10px;
+        padding: 10px;
+      }
+      .main1 > div:nth-child(1) {
+        display: flex;
+        width: 40%;
+        /* border: 2px solid red; */
+        justify-content: space-around;
+        text-align: center;
+        margin-left: 200px;
+      }
+      .main1 > div:nth-child(2) {
+        width: 25%;
+        /* border: 2px solid blue; */
+      }
+      .main1 > div:nth-child(1) > input {
+        width: 100%;
+        height: 40px;
+        background-color: #f5f5f6;
+        border-radius: 5px;
+        padding: 10px;
+      }
+      .main1 > div:nth-child(3) {
+        width: 10%;
+        /* border: 2px solid blue; */
+        display: flex;
+        justify-content: space-evenly;
+        margin-right: 150px;
+        text-align: center;
+      }
+      .main1 > div:nth-child(3) > img {
+        width: 20%;
+        height: 40px;
+      }
+      .main3 {
+        width: 80%;
+        margin: auto;
+        background-color: white;
+        display: flex;
+        justify-content: space-evenly;
+      }
+      .main3 > p:hover {
+        border-bottom: 1px solid #ffa497;
+        cursor: pointer;
+      }
+      .signupsection {
+    width: 100%;
+    /* position: relative; */
+    /* top: 25vh; */
+  }
+  #signup {
+    width: 30%;
+    margin: 0 auto;
+    text-align: center;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 3px black;
+  }
+  #signup img {
+    width: 80%;
+    height: 15vh;
+  }
+  #signup form input {
+    width: 80%;
+    margin-top: 2vh;
+    font-size: 2vh;
+    background: white;
+    padding: 2vh;
+    border-radius: 10px;
+
+    margin-bottom: 2vh;
+    color: black;
+  }
+  #signup form button {
+    width: 86%;
+    font-size: 2vh;
+    padding: 2vh;
+    margin-bottom: 2vh;
+    border-radius: 10px;
+    background: black;
+    color: white;
+    text-align: center;
+    font-weight: 400;
+    text-decoration: solid;
+  }
+  #signup form h5 {
+    color: #818181;
+    margin: 0;
+  }
+  #signup p {
+    text-align: center;
+    font-family: cursive;
+    font-weight: 400;
+    color: black;
+    text-decoration: solid;
+  }
+      
+/* footer */
+footer {
+  position: relative;
+  background-color: white;
+  padding: 3rem 0px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  z-index: 3;
+}
+#footer {
+  display: flex;
+  padding: 0px 12vw;
+  text-transform: uppercase;
+  font-family: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS",
+    sans-serif;
+  /* z-index: 1; */
+}
+#footer > ul {
+  padding: 0px 30px 0px 0px;
+  list-style-type: none;
+  color: #818181;
+}
+#footer h6 {
+  font-size: 1rem;
+}
+#footer > ul > li a {
+  text-decoration: none;
+  color: black;
+  text-transform: none;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 0.87rem;
+}
+#footer li {
+  margin-top: 0.37rem;
+  line-height: 1.2;
+}
+#footerBottom {
+  display: flex;
+  padding: 0px 12vw;
+  margin-top: 2.3rem;
+  position: relative;
+}
+footer button {
+  height: 2.3rem;
+  color: white;
+  background-color: black;
+  border: none;
+  font-size: 0.9rem;
+  margin-left: 0px;
+  width: 10rem;
+  vertical-align: middle;
+}
+footer input {
+  height: 2.3rem;
+  width: 19rem;
+  margin-top: 1rem;
+}
+/* #sect2 label {
+        position: absolute;
+        right: 12vw;
+      } */
+#sect2 img {
+  width: 7.5rem;
+  height: 2.5rem;
+  margin-top: 1rem;
+}
+#sect2 {
+  position: absolute;
+  right: 12vw;
+}
+#img1 {
+  float: left;
+  /* position: absolute; */
+  /* right: -80%; */
+}
+#img2 {
+  position: absolute;
+  right: 2px;
+}
+#footer > ul > li a:hover {
+  color: #d4a255;
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="nav">
+      <!-- nav 1 -->
+      <div class="main">
+        <div>
+          <img src="gift.PNG" alt="" />
+          <p>FLAT 199 Store</p>
+          <p class="pink">SHOP NOW</p>
+        </div>
+        <div>
+          <img src="home.PNG" alt="" />
+          <p>MyGlamm Store</p>
+        </div>
+      </div>
+      <!-- nav 1 end -->
+      <!-- nav 2 start -->
+      <div class="main1">
+        <div>
+          <img
+            src="https://files.myglamm.com/images/static/myglamm-logo.png"
+            alt=""
+          />
+          <input
+            type="text"
+            name=""
+            id=""
+            placeholder="Find Lipstick,Eyeliner,Makeup Titorial,etc"
+          />
+        </div>
+        <div></div>
+        <div>
+          <p>Cart <span>0</span></p>
+          <img src="userlogo.PNG" alt="" />
+        </div>
+      </div>
+      <!-- nav 2 end -->
+      <!-- nav 3 start -->
+      <div class="main3">
+        <p>HOME</p>
+        <p>MAKEUP</p>
+        <p>HAIR CARE</p>
+        <p>SKINCARE</p>
+        <p>COLLECTION</p>
+        <p>REWARDS</p>
+        <p>MYGLAMMSTUDIO</p>
+        <p>OFFERS</p>
+      </div>
+    </div>
+    <!-- navbar end here -->
+
+     <!--Signup Details-->
+
+     <section class="signupsection">
+      <div id="signup">
+        <p>Get 15% MyGlammXO Points back on every order</p>
+        <img src="https://www.myglamm.com/images/myglamm-logo.png" alt="logo" />
+        <hr />
+        <form id="form">
+          
+          <input
+            type="text"
+            id="email"
+            placeholder="Enter Your Email Address"
+          />
+          <br />
+          <input
+            type="password"
+            id="password"
+            placeholder="Enter Your password"
+          />
+          <br />
+         
+          <a href="login.html"><button onclick="mylogin()">Login</button></a>
+          
+        </form>
+      </div>
+    </section>
+
+    
+   <!-- footer start here -->
+    <footer>
+      <hr />
+      <br />
+      <br />
+      <div id="footer" style="margin-top: -4%">
+        <ul>
+          <li><h6>Bath &amp; Body</h6></li>
+          <li>
+            <a href="">Face Washes</a>
+          </li>
+          <li>
+            <a href="">Shower Gels</a>
+          </li>
+          <li>
+            <a href=""
+              >Body Moisurizers</a
+            >
+          </li>
+          <li><a href="">Soaps</a></li>
+          <li><a href="">Hand Care</a></li>
+          <li><a href="">Foot Care</a></li>
+          <li>
+            <a href=""
+              >Sanitizing Kits</a
+            >
+          </li>
+          <li>
+            <a href=""
+              >Body Spray &amp; Mists</a
+            >
+          </li>
+        </ul>
+        <ul>
+          <li><h6>Sanitizing Care</h6></li>
+          <li>
+            <a href=""
+              >Sanitizing Wipes</a
+            >
+          </li>
+          <li>
+            <a href="">Face Washes</a>
+          </li>
+          <li>
+            <a href="">Shower Gels</a>
+          </li>
+          <li>
+            <a href=""
+              >Body Moisturizers</a
+            >
+          </li>
+          <li><a href="">Soaps</a></li>
+          <li><a href="">Hand Care</a></li>
+          <li><a href="">Foot Care</a></li>
+          <li>
+            <a href=""
+              >Surface Spray</a
+            >
+          </li>
+          <li>
+            <a href=""
+              >Sanitizing Kits</a
+            >
+          </li>
+          <li>
+            <a href=""
+              >Body Spray &amp; Mists</a
+            >
+          </li>
+          <li>
+            <a href=""
+              >Sanitizing Spray</a
+            >
+          </li>
+          <li>
+            <a href=""
+              >Hand Sanitizer</a
+            >
+          </li>
+        </ul>
+        <ul>
+          <li><h6>Skincare</h6></li>
+          <li>
+            <a href="">Face Cleanser</a>
+          </li>
+          <li><a href="">Cleanser</a></li>
+          <li><a href="">Toner</a></li>
+          <li>
+            <a href=""
+              >Moisturising Cream</a
+            >
+          </li>
+          <li><a href="">Moisturiser</a></li>
+          <li><a href="">Face Wash</a></li>
+          <li>
+            <a href="">Body Lotion</a>
+          </li>
+          <li><a href="">Sheet Mask</a></li>
+          <li>
+            <a href=""
+              >Lip Balms &amp; Treatment</a
+            >
+          </li>
+          <li><a href="">Eye Cream</a></li>
+          <li>
+            <a href="">Face Sunscreen</a>
+          </li>
+          <li>
+            <a href=""
+              >Exfoliators &amp; Scrub</a
+            >
+          </li>
+          <li><a href="">Face Masks</a></li>
+          <li>
+            <a href=""
+              >Moisturising Gel</a
+            >
+          </li>
+          <li>
+            <a href="">Night Cream</a>
+          </li>
+          <li><a href="">Essence</a></li>
+        </ul>
+        <ul>
+          <li><h6>Face</h6></li>
+          <li><a href="">Face Sets</a></li>
+          <li><a href="">Fixing Powder</a></li>
+          <li><a href="">Primer</a></li>
+          <li><a href="">Concealer</a></li>
+          <li><a href="">Foundation</a></li>
+          <li><a href="">Compact</a></li>
+          <li>
+            <a href="">Setting Powder</a>
+          </li>
+          <li><a href="">Banana Powder</a></li>
+          <li><a href="">Highlighter</a></li>
+          <li><a href="">Blush</a></li>
+          <li><a href="">Bronzer</a></li>
+          <li><a href="">Cheek Stain</a></li>
+          <li><a href="">Face Chalks</a></li>
+          <li><a href="">Sheet Masks</a></li>
+        </ul>
+        <ul>
+          <li><h6>Eyes</h6></li>
+          <li><a href="">Eye Shadow</a></li>
+          <li><a href="">Eyeliner</a></li>
+          <li><a href="">Eyebrows</a></li>
+          <li><a href="">Eye Sparkle</a></li>
+          <li><a href="">Eye Chalks</a></li>
+          <li><a href="">Mascara</a></li>
+          <li><a href="">Kajal</a></li>
+        </ul>
+        <ul>
+          <li><h6>Lips</h6></li>
+          <li><a href="">Lipstick</a></li>
+          <li>
+            <a href="">Matte Lipstick</a>
+          </li>
+          <li>
+            <a href="">Metallic Lipstick</a>
+          </li>
+          <li>
+            <a href="">Hi-Shine Lipstick</a>
+          </li>
+          <li>
+            <a href="">Liquid Lipstick</a>
+          </li>
+          <li><a href="">Lip Gloss</a></li>
+          <li>
+            <a href="">Hi-Shine Lipgloss</a>
+          </li>
+          <li><a href="">Lipliners</a></li>
+          <li><a href="">Lip Care</a></li>
+          <li><a href="">Lip Sparkle</a></li>
+          <li><a href="">Lip Stain</a></li>
+          <li><a href="">Lip Chalks</a></li>
+          <li><a href="">Find Your Lipstick</a></li>
+        </ul>
+        <ul>
+          <li><h6>Nails</h6></li>
+          <li><a href="">Nail Polish</a></li>
+          <li>
+            <a href=""
+              >Matte Nail Polish</a
+            >
+          </li>
+          <li>
+            <a href=""
+              >Matte Nail Enamel</a
+            >
+          </li>
+          <li>
+            <a href=""
+              >Glossy Nail Enamel</a
+            >
+          </li>
+          <li><a href="">Nail Lacquer</a></li>
+        </ul>
+        <ul>
+          <li><h6>myglammSTUDIO</h6></li>
+          <li><a href="">Style</a></li>
+          <li><a href="">Lifestyle</a></li>
+          <li><a href="">Trends </a></li>
+          <li><a href="">Tips</a></li>
+          <li><a href="">Beauty</a></li>
+          <li><a href="">Tutorials</a></li>
+        </ul>
+        <ul>
+          <li><h6>Know More</h6></li>
+          <li><a href="">About Us</a></li>
+          <li><a href="">Exclusive Offers</a></li>
+          <li><a href="">Refer &amp; Earn</a></li>
+          <li><a href="">myglammPARTIES</a></li>
+          <li><a href="">Store Locator</a></li>
+          <li><a href="">Press &amp; Media</a></li>
+          <li><a href="">Terms &amp; Conditions</a></li>
+          <li><a href="">Privacy Policy</a></li>
+          <li>
+            <a href=""
+              >Shipping and Delivery policy</a
+            >
+          </li>
+          <li>
+            <a href="">Returns and Replacements</a>
+          </li>
+          <li><a href="">MyGlamm Rewards</a></li>
+          <li><a href="">Sitemap</a></li>
+        </ul>
+      </div>
+      <div id="footerBottom">
+        <div id="sect1">
+          <form action="">
+            <label for="">SUBSCRIBE FOR MYGLAMM EMAILS</label>
+            <br />
+            <input type="text" placeholder="Please enter valid email ID" />
+            <button>SUBSCRIBE NOW</button>
+          </form>
+        </div>
+        <div id="sect2">
+          <label for="">EXPERIENCE THE MYGLAMM MOBILE APP</label>
+          <br />
+          <a href="">
+            <img
+              src="https://www.myglamm.com/images/iosStore.png"
+              alt=""
+              id="img1"
+            />
+          </a>
+          <a href="">
+            <img
+              src="https://www.myglamm.com/images/playStore.png"
+              alt=""
+              id="img2"
+            />
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+<script> 
+ 
+  var data = JSON.parse(localStorage.getItem("signup"))
+ function mylogin(){
+    event.preventDefault()
+    checkUser();
+   }
+   function checkUser(){
+   let  uname= document.querySelector("#email").value;
+   let  upasw= document.querySelector("#password").value
+  let is=false;
+   for(var i =0;i<data.length;i++){
+    if(uname==data[i].email && upasw==data[i].pass){
+        is=true;
+   }
+}   
+if(is){
+    alert("Login sucesfull")
+    location.replace("index.html")
+}
+else{
+    alert("Wrong pasw")
+}
+   }
+
+</script>
