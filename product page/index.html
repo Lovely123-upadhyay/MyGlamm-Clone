@@ -1,0 +1,240 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+      }
+      .nav {
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        padding: 10px;
+        top: 0;
+        position: sticky;
+        background-color: white;
+        z-index: 1;
+      }
+      .main {
+        /* border: 2px solid red; */
+        display: flex;
+        justify-content: space-between;
+        /* height: 50px; */
+        background-color: #fee8e8;
+      }
+      .main > div:nth-child(1) {
+        display: flex;
+        width: 20%;
+        /* border: 2px solid red; */
+        justify-content: space-around;
+        text-align: center;
+        margin-left: 200px;
+      }
+      .main > div:nth-child(1) > img {
+        width: 10%;
+        height: 40px;
+        margin-top: 6px;
+      }
+      .main > div:nth-child(2) {
+        display: flex;
+        width: 20%;
+      }
+      .main > div:nth-child(2) > img {
+        width: 20%;
+        height: 40px;
+        margin-top: 6px;
+      }
+      .pink {
+        color: #ffa497;
+        font-weight: bold;
+      }
+      .main1 {
+        /* border: 2px solid red; */
+        display: flex;
+        justify-content: space-between;
+        height: 50px;
+        margin-top: 10px;
+        padding: 10px;
+      }
+      .main1 > div:nth-child(1) {
+        display: flex;
+        width: 40%;
+        /* border: 2px solid red; */
+        justify-content: space-around;
+        text-align: center;
+        margin-left: 200px;
+      }
+      .main1 > div:nth-child(2) {
+        width: 25%;
+        /* border: 2px solid blue; */
+      }
+      .main1 > div:nth-child(1) > input {
+        width: 100%;
+        height: 40px;
+        background-color: #f5f5f6;
+        border-radius: 5px;
+        padding: 10px;
+      }
+      .main1 > div:nth-child(3) {
+        width: 10%;
+        /* border: 2px solid blue; */
+        display: flex;
+        justify-content: space-evenly;
+        margin-right: 150px;
+        text-align: center;
+      }
+      .main1 > div:nth-child(3) > img {
+        width: 20%;
+        height: 40px;
+      }
+      .main3 {
+        width: 80%;
+        margin: auto;
+        background-color: white;
+        display: flex;
+        justify-content: space-evenly;
+      }
+      .main3 > p:hover {
+        border-bottom: 1px solid #ffa497;
+        cursor: pointer;
+      }
+      .product1 {
+  position: relative;
+  top: 25vh;
+}
+
+.outter-container > h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: auto auto 1.5rem;
+  padding: 0 5px;
+  background: linear-gradient(transparent 60%, rgb(255, 151, 151) 30px);
+  font-size: 24px;
+  width: max-content;
+}
+.inner-container {
+  width: 60%;
+  margin: auto;
+  display: grid;
+  grid-gap: 8%;
+  grid-template-columns: 32% 32% 32%;
+}
+
+.maindom {
+  box-shadow: 0 0 3px black;
+  background: white;
+}
+.imgdiv {
+  text-align: center;
+}
+.imgdiv img:hover {
+  width: 100%;
+}
+.imgdiv img {
+  height: 25vh;
+  width: 95%;
+  transition: all o.5s linear;
+}
+.descdiv {
+  height: 25.5vh;
+  padding: 3%;
+  text-align: center;
+}
+.descdiv h3 {
+  margin: 4%;
+  font-size: 98%;
+}
+.descdiv h2 {
+  margin: 4%;
+  font-size: 98%;
+}
+.descdiv .desc {
+  color: grey;
+}
+.descdiv button {
+  background: black;
+  color: white;
+  padding: 5%;
+  cursor: pointer;
+}
+      
+/* footer */
+footer {
+  position: relative;
+  background-color: white;
+  padding: 3rem 0px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  /* z-index: 3; */
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="nav">
+      <!-- nav 1 -->
+      <div class="main">
+        <div>
+          <img src="gift.PNG" alt="" />
+          <p>FLAT 199 Store</p>
+          <p class="pink">SHOP NOW</p>
+        </div>
+        <div>
+          <img src="home.PNG" alt="" />
+          <p>MyGlamm Store</p>
+        </div>
+      </div>
+      <!-- nav 1 end -->
+      <!-- nav 2 start -->
+      <div class="main1">
+        <div>
+          <img
+            src="https://files.myglamm.com/images/static/myglamm-logo.png"
+            alt=""
+          />
+          <input
+            type="text"
+            name=""
+            id=""
+            placeholder="Find Lipstick,Eyeliner,Makeup Titorial,etc"
+          />
+        </div>
+        <div></div>
+        <div>
+          <p>Cart <span id="count">0</span></p>
+          <img src="userlogo.PNG" alt="" />
+        </div>
+      </div>
+      <!-- nav 2 end -->
+      <!-- nav 3 start -->
+      <div class="main3">
+        <p>HOME</p>
+        <p>MAKEUP</p>
+        <p>HAIR CARE</p>
+        <p>SKINCARE</p>
+        <p>COLLECTION</p>
+        <p>REWARDS</p>
+        <p>MYGLAMMSTUDIO</p>
+        <p>OFFERS</p>
+      </div>
+    </div>
+    <!-- navbar end here -->
+
+    <section class="product1">
+      <div class="outter-container">
+        <h1>Nail Polish</h1>
+        <div class="inner-container"></div>
+      </div>
+    </section>
+    
+   <!-- footer start here -->
+   
+  </body>
+</html>
+<script src="product.js">
+ 
+</script>
