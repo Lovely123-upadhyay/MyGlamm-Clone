@@ -68,6 +68,9 @@ var desc = document.createElement("h3");
 desc.innerHTML = `${elem.Description}`;
 desc.setAttribute("class", "desc");
 btn.textContent = "Add To Bag";
+btn.addEventListener("click",function(){
+  checkout()
+})
 div1.append(img);
 div1.setAttribute("class", "imgdiv");
 div2.append(name, desc, price, btn);
@@ -100,5 +103,17 @@ if (!exist) {
   arr3.push(elem);
   localStorage.setItem("myglemmbag", JSON.stringify(arr3));
   alert("Item Successfully Added To Bag");
+  window.location.href = "../Signup/signup.html"
 }
+}
+
+let flag = JSON.parse(localStorage.getItem("flag"))
+function checkout(){
+  if(flag==false){
+    alert("please login first")
+    window.location.href = "../Signup/signup.html"
+  }
+  else{
+    window.location.href = "../payment/payment.html"
+  }
 }

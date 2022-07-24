@@ -95,9 +95,14 @@ input[type="number"],input[type="month"]{
         font-weight: bold;
         margin: 20px;
 }
+h1{
+  text-align: center;
+  color: blue;
+}
     </style>
 </head>
 <body>
+  <h1>Please do payment for your order</h1>
     <!-- <div class="paymentDetails">
         <h4>Payment Method Using <span>Credit/Debit/ATM Card</span></h4>
         <div class="inputDetails">
@@ -132,7 +137,7 @@ input[type="number"],input[type="month"]{
     // payment gateway
     document.querySelector("form").addEventListener("submit",function(event){
      event.preventDefault()
-        var num = '123456789'
+        var num = '1'
         var date = '2025-01'
         var cvv = '987'
         var cardNumber = document.getElementById("number").value 

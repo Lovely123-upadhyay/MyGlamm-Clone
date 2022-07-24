@@ -596,7 +596,8 @@ footer input {
 }   
 if(is){
     alert("Login sucesfull")
-    location.replace("index.html")
+    localStorage.setItem("flag","true")
+    location.replace("../index.html")
 }
 else{
     alert("Wrong pasw")

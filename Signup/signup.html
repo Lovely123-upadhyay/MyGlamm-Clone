@@ -236,6 +236,14 @@ footer input {
 #footer > ul > li a:hover {
   color: #d4a255;
 }
+#lo{
+  background-color: black;
+  color: white;
+  border: none;
+  width: 80%;
+  height: 50px;
+  border-radius: 10px;
+}
 
     </style>
   </head>
@@ -321,9 +329,10 @@ footer input {
           <br />
           <h5>Already Registered</h5>
           <br />
-          <a href="login.html"><button>Login</button></a>
+          
           
         </form>
+        <a href="login.html"><button id="lo">Login</button></a>
       </div>
     </section>
 
@@ -599,6 +608,7 @@ footer input {
     }
     arr.push(obj)
     localStorage.setItem("signup",JSON.stringify(arr))
+    window.location.href = "login.html"
   }
-
+  
 </script>
